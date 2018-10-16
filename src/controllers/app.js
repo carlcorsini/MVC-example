@@ -1,6 +1,6 @@
 const model = require('../models/app')
 
-getAllUsers = (req, res, next) => {
+const getAllUsers = (req, res, next) => {
   let promise = model.getAllUsers()
 
   promise.then(result => {
